@@ -1,0 +1,5 @@
+manolo 5
+pedrito 2
+juani 8
+elisa 9
+vicente 4
