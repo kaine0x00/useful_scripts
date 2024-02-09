@@ -1,0 +1,18 @@
+
+	
+# Standard host addresses	# Standard host addresses
+127.0.0.1 localhost	127.0.0.1 localhost
+::1 localhost ip6-localhost ip6-loopback	::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes	ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters	ff02::2 ip6-allrouters
+# This host address	# This host address
+127.0.1.1 danny-lubuntu	127.0.1.1 danny-lubuntu
+212.128.4.204	a202e34.escet.urjc.es a202e34
+212.128.4.205	a202e35.escet.urjc.es a202e35
+212.128.4.206	a202e36.escet.urjc.es a202e36
+212.128.4.207	a202e37.escet.urjc.es a202e37
+212.128.4.208	a202e38.escet.urjc.es a202e38
+212.128.4.209	a202e39.escet.urjc.es a202e39
+192.168.4.41	gamma01.escet.urjc.es gamma01
+192.168.4.42	gamma02.escet.urjc.es gamma02
+192.168.4.43	gamma03.escet.urjc.es gamma03
