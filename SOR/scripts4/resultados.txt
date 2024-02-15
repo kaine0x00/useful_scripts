@@ -1,5 +1,5 @@
 manolo apto 5
-pedrito inapto 2
+pedrito no apto 2
 juani apto 8
 elisa apto 9
-vicente inapto 4
+vicente no apto 4

@@ -18,7 +18,7 @@ do
         echo "$login apto $nota" >> resultados.txt
         ((aprobados++))
     else
-        echo "$login inapto $nota" >> resultados.txt
+        echo "$login no apto $nota" >> resultados.txt
     fi
     ((counter++))
 done
@@ -26,8 +26,14 @@ counter=1
 while [ $counter -le $line_num ]
 do
     login=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "1"`
-    aptitud=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "2"`
-    nota=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "3"`
+    if [ `head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "2"` = "no" ]
+    then 
+        aptitud=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "2 3"`
+        nota=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "4"`
+    else
+        aptitud=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "2"`
+        nota=`head -n $counter resultados.txt | tail -n 1 | cut -d " " -f "3"`
+    fi
     
     echo "
 Enviando mail a $login@pantuflo.es
